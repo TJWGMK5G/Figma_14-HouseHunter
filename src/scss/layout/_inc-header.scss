@@ -1,0 +1,23 @@
+.header__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 46px;
+    margin-bottom: 100px;
+  
+    &__logo {
+      flex: 0 0 530px;
+    }
+  
+    &__list {
+      padding-left: 95px;
+      padding-right: 56px;
+      display: flex;
+      align-items: center;
+      gap: 24px;
+  
+      &__li span{
+        vertical-align: top;
+      }
+    }
+  }
