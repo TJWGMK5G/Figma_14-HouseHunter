@@ -365,6 +365,15 @@
 
     &__content {
 
+        @media(max-width:1170px) {
+            margin-bottom: 50px;
+            text-align: center;
+        }
+
+        @media(max-width:900px) {
+            text-align: left;
+        }
+
         &__title {
             position: relative;
             z-index: 2;
@@ -394,6 +403,14 @@
             text-transform: capitalize;
             color: #1B1C57;
             margin-bottom: 16px;
+
+            @media(max-width:1170px) {
+                margin-bottom: 0;
+            }
+
+            @media(max-width:600px) {
+                margin-bottom: 10px;
+            }
         }
 
         &__text {
@@ -428,19 +445,60 @@
             &__two li{
                 margin-bottom: 16px;
             }
+
+            @media(max-width:1170px) {
+                justify-content: center;
+
+                & ul {
+                    text-align: start;
+                }
+            }
+
+            @media(max-width:900px) {
+                justify-content: flex-start;
+            }
+
+            @media(max-width:425px) {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0;
+            }
+
+            
         }
 
         &__contact {
             display: flex;
             align-items: center;
+
+            @media(max-width:1170px) {
+                justify-content: center;
+            }
+
+            @media(max-width:900px) {
+                justify-content: start;
+            }
+
+            @media(max-width:500px) {
+                flex-direction: column;
+            }
             
 
             &__person {
                 margin-right: 24px;
+
+                @media(max-width:500px) {
+                    margin-right: 0;
+                }
             }
 
             &__group {
                 margin-right: 50px;
+
+                @media(max-width:500px) {
+                    margin-right: 0;
+                    margin-bottom: 20px;
+                }
 
                 &__name {
                     font-weight: 500;
@@ -448,6 +506,10 @@
                     line-height: 24px;
                     color: #0E1735;
                     margin-bottom: 4px;
+
+                    @media(max-width:500px) {
+                        margin-bottom: 0;
+                    }
                 }
 
                 &__position {
@@ -483,7 +545,7 @@
     }
 
     &__video {
-        
+            
 
         & img {
             transition: 0.5s ease;
@@ -491,6 +553,10 @@
             -webkit-box-shadow: 10px 11px 20px 5px rgba(240, 226, 55, 0.11);
             -moz-box-shadow: 10px 11px 20px 5px rgba(240, 226, 55, 0.11);
             box-shadow: 10px 11px 20px 5px rgba(240, 226, 55, 0.11);
+
+            @media(max-width:1170px) {
+                width: 100%;
+            }
 
             &:hover {
                 transform: scale(1.05);
@@ -638,6 +704,10 @@
         color: #F59E0B;
         margin-bottom: 12px;
 
+        @media(max-width:900px) {
+            margin-bottom: 30px;
+        }
+
         &__line {
             margin: 0 auto;
             width: 32px;
@@ -658,6 +728,12 @@
         max-width: 500px;
         margin: 0 auto;
         margin-bottom: 24px;
+
+        @media(max-width:900px) {
+            text-align: center;
+            max-width: max-content;
+            margin-bottom: 10px;
+        }
     }
 
     &__btn {
@@ -693,11 +769,27 @@
                 align-items: center;
                 margin-bottom: 40px;
 
+                @media(max-width:1170px) {
+                    justify-content: flex-start;
+                }
+
+                @media(max-width:700px) {
+                    flex-direction: column;
+                    align-items: flex-start;
+                }
+
                 &__picture {
                     margin-right: 32px;
 
+                    @media(max-width:700px) {
+                        margin-right: 0;
+                        margin-bottom: 25px;
+                    }
+
                     & img {
                         max-width: max-content;
+
+                        
                     }
                 }
 
@@ -729,6 +821,10 @@
                         color: #1B1C57;
                         margin-bottom: 16px;
 
+                        @media(max-width:700px) {
+                            margin-bottom: 10px;
+                        }
+
                     }
 
                     &__info {
@@ -749,8 +845,26 @@
 
         &__wrap {
 
+            @media(max-width:1170px) {
+                text-align: center;
+            }
+
             &__picture {
                 margin-bottom: 24px;
+
+                & img {
+                    @media(max-width:1170px) {
+                        width: 100%;
+                        height: 400px;
+                        object-fit: fill;
+                    }
+
+                    @media(max-width:700px) {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: fill;
+                    }
+                }
             }
     
             &__person {
@@ -760,6 +874,10 @@
                 font-size: 14px;
                 line-height: 22px;
                 color: #3C4563;
+
+                @media(max-width:700px) {
+                    text-align: left;
+                }
 
                 & img {
                     vertical-align: middle;
@@ -775,6 +893,14 @@
                 color: #1B1C57;
                 margin-bottom: 12px;
 
+                @media(max-width:1170px) {
+                    margin-bottom: 0;
+                }
+
+                @media(max-width:700px) {
+                    margin-bottom: 10px;
+                    text-align: left;
+                }
             }
     
             &__text {
@@ -784,6 +910,14 @@
                 color: #626687;
                 opacity: 0.75;
                 margin-bottom: 16px;
+
+                @media(max-width:1170px) {
+                    margin-bottom: 20px;
+                }
+
+                @media(max-width:700px) {
+                    text-align: left;
+                }
             }
     
             &__info {
@@ -792,6 +926,10 @@
                 font-size: 14px;
                 line-height: 24px;
                 color: #888B97;
+
+                @media(max-width:700px) {
+                    text-align: left;
+                }
 
                 & img {
                     vertical-align: middle;

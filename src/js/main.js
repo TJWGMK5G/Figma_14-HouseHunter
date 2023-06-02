@@ -10,9 +10,24 @@ new Swiper('.house-slider' , {
     //     dynamicBullets: true,
     // },
         autoHeight: true,
-        slidesPerView: 2,
+        slidesPerView: 1,
         spaceBetween: -350,
         loop: true,
+
+    breakpoints: {
+        // 320: {
+        //     slidesPerView: 1
+        // },
+        // 768: {
+        //     slidesPerView: 1
+        // },
+        1170: {
+            slidesPerView: 2
+        },
+        // 1920: {
+        //     slidesPerView: 4
+        // }
+    }
     
 });
 
