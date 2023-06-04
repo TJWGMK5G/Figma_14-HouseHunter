@@ -126,6 +126,7 @@
     // overflow: hidden;
 
     &__bg {
+        width: 100%;
         position: absolute;
         z-index: -1;
         top: 0;
@@ -179,6 +180,7 @@
 }
 
 .main-recommendation {
+    position: relative;
     margin-bottom: 120px;
     padding-left: 40px;
 
@@ -277,10 +279,20 @@
     background-color: #10B981;
 }
 
-.swiper-button-prev, 
-.swiper-button-next
- {
-    margin-top: 0px;
+// .swiper-button-prev, 
+// .swiper-button-next
+//  {
+//     margin-top: 0px;
+// }
+
+// .swiper-button-prev-recommend {
+//     top: 50px;
+//     right: 100px;
+// }
+
+.swiper-button-prev, .swiper-rtl .swiper-button-next {
+    left: 0;
+    right: 0;
 }
 
 .swiper-wrapper {
@@ -957,6 +969,10 @@
         background-size: cover;
         border-radius: 32px;
 
+        @media(max-width: 600px) {
+            padding: 40px 20px;
+        }
+
         &__picture1 {
             position: absolute;
             z-index: 5;
@@ -1010,11 +1026,21 @@
             right: 2%;
             bottom: 10%;
         }
+
+        @media(max-width:996px) {
+            &__picture1, &__picture2, &__picture3, &__picture4, &__picture5, &__picture6, &__picture7, &__picture8{
+                display: none;
+            }
+        }
     }
 
     &__content {
         max-width: 500px;
         margin: 0 auto;
+
+        @media(max-width: 600px) {
+            max-width: max-content;
+        }
 
         &__title {
             position: relative;
@@ -1026,6 +1052,11 @@
             text-transform: capitalize;
             color: #1B1C57;
             margin-bottom: 32px;
+
+            @media(max-width: 600px) {
+                font-size: 22px;
+                line-height: 120%;
+            }
         }
 
         &__form {
@@ -1044,9 +1075,19 @@
             &__group {
                 display: flex;
                 flex: 0 0 300px;
+
+                @media(max-width: 600px) {
+                    flex: 1 0 auto;
+                }
                 
                 &__mail {
                     margin-right: 16px;
+
+                    
+                    @media(max-width: 600px) {
+                            display: none;
+                        }
+                  
                 }
     
                 &__input {
@@ -1055,6 +1096,10 @@
                     border: transparent;
                     padding: 15px 0;
                     outline: 0;
+
+                    @media(max-width: 600px) {
+                        padding-right: 32px;
+                    }
                 }
             }   
 
