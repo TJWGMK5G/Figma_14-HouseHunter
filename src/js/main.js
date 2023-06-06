@@ -1,32 +1,25 @@
 new Swiper('.house-slider' , {
     // Стрелки
-    navigation: {
-        nextEl: 'swiper-button-next',
-        prevEl: 'swiper-button-prev',
-    },
-    // pagination: {
-    //     el: '.swiper-pagination',
-    //     clickable: true,
-    //     dynamicBullets: true,
+    // navigation: {
+    //     nextEl: '.swiper-button-next',
+    //     prevEl: '.swiper-button-prev',
     // },
+    navigation: {
+        nextEl: '.swiper-button-prev-recommend',
+        prevEl: '.swiper-button-next-recommend',
+    },
         autoHeight: true,
         slidesPerView: 1,
-        spaceBetween: -350,
+        spaceBetween: 40,
         loop: true,
 
     breakpoints: {
-        // 320: {
-        //     slidesPerView: 1
-        // },
-        // 768: {
-        //     slidesPerView: 1
-        // },
-        1170: {
+        900: {
+            slidesPerView: 3
+        },
+        600: {
             slidesPerView: 2
         },
-        // 1920: {
-        //     slidesPerView: 4
-        // }
     }
     
 });
@@ -39,8 +32,9 @@ new Swiper('.main-review__swiper', {
         dynamicBullets: true,
         },
         autoHeight: true,
+        initialSlide: 1,
         // slidesPerView: 1,
-        spaceBetween: 250,
+        spaceBetween: 150,
         loop: true,
         slidesPerGroup: 1,
         centeredSlides: true,
