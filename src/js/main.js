@@ -1,12 +1,26 @@
 // burger-menu
-// const openBtn = document.querySelector('.header-burgermenu')
-// const closeBtn = document.querySelector('.header-burgermenu-close')
-// const list = document.querySelector('.header-wrapper')
+const openBtn = document.querySelector('.header-burgermenu')
+const closeBtn = document.querySelector('.header-burgermenu-close')
+const list = document.querySelector('.header-wrapper')
+const body = document.querySelector('body')
 
-// openBtn.addEventListener('click' , function() {
-//     // list.style.display = 'block';
-//     closeBtn.classList.toggle('header-burgermenu-active')
-// })
+
+openBtn.addEventListener('click' , function() {
+    list.classList.add('header__vissable')
+    closeBtn.classList.add('header__vissable')
+    openBtn.classList.add("header__hidden")
+    body.classList.add('body__bg')
+})
+
+closeBtn.addEventListener('click' , function() {
+    list.classList.remove('header__vissable')
+    closeBtn.classList.remove('header__vissable')
+    openBtn.classList.remove("header__hidden")
+    body.classList.remove('body__bg')
+    // list.classList.toggle('header__hidden')
+    // closeBtn.classList.toggle('header__hidden')
+    // openBtn.classList.toggle("header__vissable")
+})
 
 // $(document).ready(function () {
 //     $(".header__burger").click(function (event) {
