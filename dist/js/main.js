@@ -1,3 +1,20 @@
+// burger-menu
+// const openBtn = document.querySelector('.header-burgermenu')
+// const closeBtn = document.querySelector('.header-burgermenu-close')
+// const list = document.querySelector('.header-wrapper')
+
+// openBtn.addEventListener('click' , function() {
+//     // list.style.display = 'block';
+//     closeBtn.classList.toggle('header-burgermenu-active')
+// })
+
+// $(document).ready(function () {
+//     $(".header__burger").click(function (event) {
+//       $(".header__burger,.header__menu").toggleClass("active");
+//       $("body").toggleClass("lock");
+//     });
+//   });
+
 new Swiper('.house-slider' , {
     // Стрелки
     // navigation: {

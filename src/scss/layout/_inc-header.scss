@@ -5,8 +5,6 @@
     padding-top: 46px;
     margin-bottom: 100px;
 
-    
-  
     &__logo {
 
     }
@@ -16,9 +14,14 @@
       align-items: center;
       gap: 24px;
 
+      &__li {
+        color: #1b1c57;
+        background: rgb(96 86 231);
+      }
+
       &__li a{
         @media(max-width:1100px) {
-          color: #1b1c57;
+          
         }
       }
   
@@ -35,11 +38,11 @@
       gap: 50px;
 
       @media(max-width:1100px) {
-        display: none;
-      }
+        display: none; 
+        }
   }
 
-  .header-burger {
+  .header-burgermenu {
     display: none;
 
     @media(max-width:1100px) {
@@ -47,4 +50,163 @@
       width: 50px;
       height: 50px;
     }
+
+    &-active {
+      display: block;
+    }
+
+    &-close {
+      display: none;
+      width: 50px;
+      height: 50px;
+    }
   }
+
+
+//   .header__burger {
+//     display: block;
+//     position: relative;
+//     width: 30px;
+//     height: 20px;
+//     position: relative;
+//     z-index: 3;
+//   }
+//   .header__burger span {
+//     position: absolute;
+//     background-color: #000000;
+//     left: 0;
+//     width: 100%;
+//     height: 2px;
+//     top: 9px;
+//     transition: all 0.3s ease 0s;
+//   }
+//   .header__burger:before,
+//   .header__burger:after {
+//     content: "";
+//     background-color: #000000;
+//     position: absolute;
+//     width: 100%;
+//     height: 2px;
+//     left: 0;
+//     transition: all 0.3s ease 0s;
+//   }
+//   .header__burger:before {
+//     top: 0;
+//   }
+//   .header__burger:after {
+//     bottom: 0;
+//   }
+//   .header__burger.active span {
+//     transform: scale(0);
+//   }
+//   .header__burger.active:before {
+//     transform: rotate(45deg);
+//     top: 9px;
+//   }
+//   .header__burger.active:after {
+//     transform: rotate(-45deg);
+//     bottom: 9px;
+//   }
+//   .header__menu {
+//     white-space: nowrap;
+//     position: fixed;
+//     top: -100%;
+//     left: 0;
+//     width: 100%;
+//     height: 100%;
+//     background-color: #c5f0f7;
+//     padding: 70px 0px 0px 0px;
+//     transition: all 0.3s ease 0s;
+//     overflow: auto;
+//   }
+//   .header__menu.active {
+//     top: 0;
+//   }
+//   .header__list {
+//     display: block;
+//     text-align: center;
+//     font-size: 20px;
+//   }
+//   .header__list li {
+//     margin: 0px 0px 30px 0px;
+//   }
+
+
+// @media (max-width: 768px) {
+//   body.lock {
+//     overflow: hidden;
+//   }
+//   .header__list {
+//     top: 20px;
+//   }
+
+//   .header__body {
+//     height: 50px;
+//   }
+//   .header__burger {
+//     display: block;
+//     position: relative;
+//     width: 30px;
+//     height: 20px;
+//     position: relative;
+//     z-index: 3;
+//   }
+//   .header__burger span {
+//     position: absolute;
+//     background-color: #000000;
+//     left: 0;
+//     width: 100%;
+//     height: 2px;
+//     top: 9px;
+//     transition: all 0.3s ease 0s;
+//   }
+//   .header__burger:before,
+//   .header__burger:after {
+//     content: "";
+//     background-color: #000000;
+//     position: absolute;
+//     width: 100%;
+//     height: 2px;
+//     left: 0;
+//     transition: all 0.3s ease 0s;
+//   }
+//   .header__burger:before {
+//     top: 0;
+//   }
+//   .header__burger:after {
+//     bottom: 0;
+//   }
+//   .header__burger.active span {
+//     transform: scale(0);
+//   }
+//   .header__burger.active:before {
+//     transform: rotate(45deg);
+//     top: 9px;
+//   }
+//   .header__burger.active:after {
+//     transform: rotate(-45deg);
+//     bottom: 9px;
+//   }
+//   .header__menu {
+//     position: fixed;
+//     top: -100%;
+//     left: 0;
+//     width: 100%;
+//     height: 100%;
+//     background-color: #c5f0f7;
+//     padding: 70px 0px 0px 0px;
+//     transition: all 0.3s ease 0s;
+//     overflow: auto;
+//   }
+//   .header__menu.active {
+//     top: 0;
+//   }
+//   .header__list {
+//     display: block;
+//     text-align: center;
+//   }
+//   .header__list li {
+//     margin: 0px 0px 15px 0px;
+//     padding-left: 15px;
+//   }
+// }
