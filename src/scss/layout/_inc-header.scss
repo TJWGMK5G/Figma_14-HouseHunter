@@ -5,6 +5,10 @@
     padding-top: 46px;
     margin-bottom: 100px;
 
+    @media(max-width:768px) {
+      margin-bottom: 50px;
+    }
+
     &__logo {
 
     }
@@ -96,6 +100,10 @@
   display: flex;
 }
 
+
+.body__bg {
+  overflow: hidden;
+}
 .body__bg::after {
   content: "";
   position: fixed;
