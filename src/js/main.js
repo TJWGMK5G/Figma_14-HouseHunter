@@ -3,13 +3,14 @@ const openBtn = document.querySelector('.header-burgermenu')
 const closeBtn = document.querySelector('.header-burgermenu-close')
 const list = document.querySelector('.header-wrapper')
 const body = document.querySelector('body')
-
+const menuActive = document.querySelector('header')
 
 openBtn.addEventListener('click' , function() {
     list.classList.add('header__vissable')
     closeBtn.classList.add('header__vissable')
     openBtn.classList.add("header__hidden")
     body.classList.add('body__bg')
+    menuActive.classList.add('header__menu');
 })
 
 closeBtn.addEventListener('click' , function() {
@@ -17,6 +18,7 @@ closeBtn.addEventListener('click' , function() {
     closeBtn.classList.remove('header__vissable')
     openBtn.classList.remove("header__hidden")
     body.classList.remove('body__bg')
+    menuActive.classList.remove('header__menu');
     // list.classList.toggle('header__hidden')
     // closeBtn.classList.toggle('header__hidden')
     // openBtn.classList.toggle("header__vissable")

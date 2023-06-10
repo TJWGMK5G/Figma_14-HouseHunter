@@ -29,9 +29,15 @@
       }
 
       &__li {
+
+        & span img {
+          vertical-align: middle;
+        }
+
         @media(max-width:1100px) {
           width: 100%;
         }
+        
       }
   
       &__li span{
@@ -68,6 +74,8 @@
     display: none;
 
     @media(max-width:1100px) {
+      position: relative;
+      z-index: 100;
       display: block;
       width: 50px;
       height: 50px;
@@ -98,12 +106,13 @@
 
 .header__vissable {
   display: flex;
+  line-height: 1.5em;
 }
-
 
 .body__bg {
   overflow: hidden;
 }
+
 .body__bg::after {
   content: "";
   position: fixed;
@@ -114,3 +123,13 @@
   background-color: rgb(56 56 56 / 93%);
   z-index: 98;
 }
+
+// .header__menu::after {
+//   content: '';
+//   position: fixed;
+//   right: 0;
+//   top: 0;
+//   width: 50%;
+//   height: 100%;
+//   background: rgb(206, 126, 126);
+// }
