@@ -1,4 +1,4 @@
-.main__start {
+.main-start {
     margin-bottom: 200px;
     display: flex;
 
@@ -36,7 +36,7 @@
     }
 }
 
-.main__information {
+.main-information {
     max-width: 500px;
     padding-right: 50px;
 
@@ -151,9 +151,6 @@
         }
     }
 
-    &__subtext {
-    }
-
     &__partner {
         transition: 0.3s ease;
         display: flex;
@@ -170,7 +167,7 @@
     }
 }
 
-.main__house {
+.main-house {
     padding-left: 50px;
     display: flex;
     align-items: flex-end;
